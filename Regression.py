@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
 #importing the file and extracting the independent and dependent values
-car_details = pd.read_csv("D:/Learning_ML/car_details.csv")
+car_details = pd.read_csv("Linear_regression\car_details.csv")
 
 x = car_details.select_dtypes(include=['number']).drop(columns=['selling_price']).values
 y = car_details['selling_price'].values
